@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a716f79d-da07-4bae-9074-4223348ab8c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bookstore/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bookstore/book_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bookstore/book_store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/integration/test_integration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/test_units.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Inlämning_testmetoder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Inlämning_testmetoder.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/test_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_units.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_units.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +38,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Integration tests.executor": "Run",
+    "Python tests.Unit tests.executor": "Run",
     "Python tests.pytest for test_units.test_add_book_from_list.executor": "Run",
     "Python tests.pytest for test_units.test_fav_remove_missing_book.executor": "Run",
     "Python tests.pytest for test_units.test_toggle_favorite_cycle.executor": "Run",
+    "Python tests.pytest in test_units.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -59,65 +55,47 @@
       <recent name="C:\Users\jespr\PycharmProjects\Inlämning_testmetoder\Bookstore" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_units.test_fav_remove_missing_book">
-    <configuration name="pytest for test_units.test_add_book_from_list" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Integration tests">
+    <configuration name="Integration tests" type="tests" factoryName="py.test">
       <module name="Inlämning_testmetoder" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_NAME" value="Python 3.13 (Inlämning_testmetoder)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_units.test_add_book_from_list&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-v -m \&quot;integration\&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_units.test_fav_remove_missing_book" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit tests" type="tests" factoryName="py.test">
       <module name="Inlämning_testmetoder" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_NAME" value="Python 3.13 (Inlämning_testmetoder)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_units.test_fav_remove_missing_book&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-v -m \&quot;unit\&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_units.test_toggle_favorite_cycle" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Inlämning_testmetoder" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_units.test_toggle_favorite_cycle&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.pytest for test_units.test_fav_remove_missing_book" />
-        <item itemvalue="Python tests.pytest for test_units.test_toggle_favorite_cycle" />
-        <item itemvalue="Python tests.pytest for test_units.test_add_book_from_list" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Python tests.Unit tests" />
+      <item itemvalue="Python tests.Integration tests" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
