@@ -29,8 +29,3 @@ För att kunna navigera på hemsidan
 Som en användare
 Vill jag att knappen "lägg till ny bok" endast skall vara aktiv när alla fält är ifyllda
 Så att man inte skapar ofullständiga titlar
-
-[US7] Statistik
-Som en användare
-Vill jag kunna se statistik över böcker och favoriter
-Så jag får en överblick av hemsidan
