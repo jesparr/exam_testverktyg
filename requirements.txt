@@ -2,4 +2,3 @@ pytest
 pytest-playwright
 playwright
 behave
-rave
