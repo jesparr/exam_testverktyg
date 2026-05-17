@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a716f79d-da07-4bae-9074-4223348ab8c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/pages/add_book_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/pages/catalog_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/pages/my_books_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/pages/statistics_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/navigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/navigation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/show_booklist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/show_booklist.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/steps/add_as_favourite.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/add_as_favourite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/steps/create_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/create_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/forms_validation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/forms_validation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/steps/forms_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/forms_validation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/steps/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/steps/show_booklist.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/show_booklist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/steps/remove_as_favourite.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/remove_as_favourite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/test_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_units.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_units.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
       <recent name="C:\Users\jespr\PycharmProjects\Inlämning_testmetoder\Bookstore" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unit tests">
+  <component name="RunManager" selected="Python tests.Integration tests">
     <configuration name="Integration tests" type="tests" factoryName="py.test">
       <module name="Inlämning_testmetoder" />
       <option name="ENV_FILES" value="" />

@@ -1,12 +1,11 @@
 import pytest
-# Importerar klasserna och din specifika boklista
 from Bookstore.book_store import BookStore, FavoriteBooks, Book
 from Bookstore.book_list import funny_books
 
 
 @pytest.fixture
 def store():
-    """Fixture som skapar en butik. Denna har redan en FavoriteBooks-instans inuti sig."""
+    # Fixture som skapar en butik
     return BookStore()
 
 
@@ -14,21 +13,21 @@ def store():
 
 @pytest.mark.integration
 def test_integration_add_and_toggle_favorite(store):
-    """1. Testar hela kedjan: Lägg till bok i store -> Toggle till favorit."""
+    # Testar hela flödet, lägg till bok i store -> Toggla som favorrit
     book_data = funny_books[0]  # "Ormar på ett plan"
     store.add_book(book_data["author"], book_data["title"])  # Skapar bok med ID 100
 
     # Integration: BookStore anropar FavoriteBooks.add() internt
     store.toggle_favorite(100)
 
-    # Vi kontrollerar att boken nu finns i favorit-managerns lista
+    # Kontrollera att boken nu finns i favorit-managerns lista
     assert len(store.favorite_manager.books) == 1
     assert store.favorite_manager.books[0].title == book_data["title"]
 
 
 @pytest.mark.integration
 def test_integration_toggle_on_off(store):
-    """2. Testar att 'toggle' faktiskt växlar tillståndet i FavoriteBooks-objektet."""
+    # Testar att toggle ändrar i favoritebooks
     store.add_book(funny_books[1]["author"], funny_books[1]["title"])  # ID 100
 
     store.toggle_favorite(100)  # Första anropet: Lägg till
@@ -40,7 +39,6 @@ def test_integration_toggle_on_off(store):
 
 @pytest.mark.integration
 def test_integration_multiple_books_flow(store):
-    """3. Testar att rätt bok hanteras när vi har flera böcker i systemet."""
     # Lägg till tre olika böcker
     store.add_book(funny_books[0]["author"], funny_books[0]["title"])  # 100
     store.add_book(funny_books[1]["author"], funny_books[1]["title"])  # 101
@@ -54,48 +52,36 @@ def test_integration_multiple_books_flow(store):
 
 
 @pytest.mark.integration
-def test_integration_prevent_duplicates_via_store(store):
-    """4. Verifierar att FavoriteBooks logik förhindrar dubbletter även när anropet kommer från Store."""
+def test_integration_prevent_duplicates(store):
+    # Verifierar hantering av dubletter
     book = store.add_book(funny_books[3]["author"], funny_books[3]["title"])  # ID 100
 
-    # Vi simulerar ett scenario där FavoriteBooks på något sätt redan har boken
+    # Lägger till boken två gånger
+    store.favorite_manager.add(book)
     store.favorite_manager.add(book)
 
-    # Om vi nu kör toggle_favorite(100) ska den hitta boken i favoriter och TA BORT den
-    store.toggle_favorite(100)
+    # Listan ska innehålla ett exemplar
+    assert len(store.favorite_manager.books) == 1
 
-    assert len(store.favorite_manager.books) == 0
-
-
-@pytest.mark.integration
-def test_integration_id_consistency(store):
-    """5. Testar att ID:t som skapas av Store är det som FavoriteBooks använder för sökning."""
-    book_data = funny_books[10]  # "My First Regex"
-    new_book = store.add_book(book_data["author"], book_data["title"])  # Får ID 100
-
-    store.toggle_favorite(100)
-
-    # Kontrollera att is_favorite faktiskt hittar det ID som Store genererade
-    assert store.favorite_manager.is_favorite(new_book.id) is True
 
 
 @pytest.mark.integration
-def test_integration_remove_unrelated_book(store):
-    """6. Testar att borttagning av en favorit inte påverkar butikens huvudlista."""
+def test_integration_remain_in_store_after_removing_from_favorites(store):
+    # Testar att boken inte försvinner från katalogen när den tas bort som favorit
     store.add_book(funny_books[0]["author"], funny_books[0]["title"])  # 100
     store.toggle_favorite(100)  # Lägg till i favoriter
 
     # Ta bort från favoriter
     store.toggle_favorite(100)
 
-    # Boken ska vara borta från favoriter men finnas kvar i butikens lager
+    # Boken ska vara borta från favoriter finns kvar i katalogen
     assert len(store.favorite_manager.books) == 0
     assert len(store.books) == 1
 
 
 @pytest.mark.integration
 def test_integration_fail_gracefully(store):
-    """7. Testar att ett misslyckat anrop (fel ID) inte korrumperar favoritlistan."""
+    # Testar att inget konstigt händer när man försöker favoritmarkera en bok som inte finns
     store.add_book(funny_books[0]["author"], funny_books[0]["title"])  # ID 100
 
     # Försök toggla ett ID som inte finns

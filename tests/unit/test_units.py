@@ -59,7 +59,7 @@ def test_toggle_non_existent_book(store):
     assert result is False
 
 
-# --- TESTER FÖR FAVORITEBOOKS (4 ST) ---
+# --- TESTER FÖR FAVORITEBOOKS  ---
 @pytest.mark.unit
 def test_fav_add_book(fav_manager, sample_book):
     # Testar att lägga till en bok i favoriter
