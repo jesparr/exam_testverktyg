@@ -16,11 +16,16 @@ class BookStore:
         self._next_id += 1
         return new_book
 
+    def get_book(self, book_id):
+        for book in self.books:
+            if book.id == book_id:
+                return book
+        return None
+
     def toggle_favorite(self, book_id):
-        book = next((b for b in self.books if b.id == book_id), None)
+        book = self.get_book(book_id)
         if not book:
             return False
-
         if self.favorite_manager.is_favorite(book_id):
             self.favorite_manager.remove(book)
         else:
@@ -41,6 +46,9 @@ class FavoriteBooks:
             self.books.remove(book)
 
     def is_favorite(self, book_id):
-        # Hjälpmetod för att kolla om ett ID finns i favoritlistan
-        return any(b.id == book_id for b in self.books)
+        for book in self.books:
+            if book.id == book_id:
+                return True
+
+        return False
 
