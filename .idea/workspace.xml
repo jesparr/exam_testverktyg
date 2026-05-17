@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a716f79d-da07-4bae-9074-4223348ab8c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <recent name="C:\Users\jespr\PycharmProjects\Inlämning_testmetoder\Bookstore" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Integration tests">
+  <component name="RunManager" selected="Python tests.Unit tests">
     <configuration name="Integration tests" type="tests" factoryName="py.test">
       <module name="Inlämning_testmetoder" />
       <option name="ENV_FILES" value="" />
