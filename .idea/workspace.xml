@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a716f79d-da07-4bae-9074-4223348ab8c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Integration tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Unit tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_units.test_add_book_from_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_units.test_fav_remove_missing_book.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_units.test_toggle_favorite_cycle.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_units.py.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Integration tests.executor": "Run",
+    "Python tests.Unit tests.executor": "Run",
+    "Python tests.pytest for test_units.test_add_book_from_list.executor": "Run",
+    "Python tests.pytest for test_units.test_fav_remove_missing_book.executor": "Run",
+    "Python tests.pytest for test_units.test_toggle_favorite_cycle.executor": "Run",
+    "Python tests.pytest in test_units.py.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "vcs.log"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jespr\PycharmProjects\Inlämning_testmetoder\github\workflows" />
